@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./index.css" rel="styleSheet" >
+    <script src='https://libs.baidu.com/jquery/1.10.2/jquery.min.js'></script>
+    <title>四叶草</title>
+</head>
+<body>
+    
+    <main>
+        <div class="one">医疗</div>
+        <div class="two">饮食</div>
+        <div class="three">运动</div>
+        <div class="four">消费</div>
+    </main>
+</body>
+<script>
+$('.one').click(function(){
+    if($(this).attr('class')=='one'){
+        $(this).attr('class','ones')
+        $('body').css({ background: 'rgba(247, 114, 114, 0.986)' })
+    }else{
+        $(this).attr('class','one')
+        $('body').css({background:'#fff'})
+    }
+})
+$('.two').click(function(){
+    if($(this).attr('class')=='two'){
+        $(this).attr('class','twos')
+        $('body').css({background:'rgba(252, 235, 3, 0.863)'})
+    }else{
+        $(this).attr('class','two')
+        $('body').css({background:'#fff'})
+    }
+})
+$('.three').click(function(){
+    if($(this).attr('class')=='three'){
+        $(this).attr('class','threes')
+        $('body').css({background:'rgba(149, 247, 3, 0.877)'})
+    }else{
+        $(this).attr('class','three')
+        $('body').css({background:'#fff'})
+    }
+})
+$('.four').click(function(){
+    if($(this).attr('class')=='four'){
+        $(this).attr('class','fours')
+        $('body').css({background:'rgba(5, 190, 247, 0.856)'})
+    }else{
+        $(this).attr('class','four')
+        $('body').css({background:'#fff'})
+    }
+})
+</script>
+</html>

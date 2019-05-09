@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body,html{
+    height:100%;
+    display: flex;
+    justify-content:center;
+    /*用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。*/
+    align-items: center;
+    /*属性定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式。*/
+    
+    transition: 0.5s;
+    /* 过渡效果 */
+
+    transition-delay: 0.1s;
+    /* 等待过渡效果 */
+}
+body{background-color: #292929}
+main{
+    width:400px;
+    height: 400px;
+    position: relative;
+    /* border: 1px solid */
+}
+div{
+    width:150px;
+    height: 150px;
+    position: absolute;
+    /* 居中文字操作 */
+    text-align: center;
+    line-height: 150px;
+    /* 居中文字操作 */
+    color: rgba(255, 255, 255, 0.849);
+    font-size: 20px;
+    cursor: pointer;
+}
+.one{
+    left:45px;
+    top:45px;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background: rgba(238, 10, 10, 0.644);
+}
+.two{
+    right:45px;
+    top:45px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background: rgba(252, 235, 3, 0.863);
+}
+.three{
+    left:45px;
+    bottom:45px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background: rgba(149, 247, 3, 0.877);
+}
+.four{
+    bottom: 45px;
+    right: 45px;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background: rgba(5, 190, 247, 0.856);
+}
+.one:hover{
+    /* 当鼠标经过时，出现阴影 */
+    box-shadow: 0 0 10px rgb(102, 98, 98);
+    /*往上移动10px,参数为X,Y轴 */
+    transform: translate(-10px,-10px);
+   
+}
+.two:hover{
+    box-shadow: 0 0px 10px rgb(102, 98, 98);
+    transform: translate(10px,-10px);
+}
+.three:hover{
+    box-shadow: 0 0 10px rgb(102, 98, 98);
+    transform: translate(-10px,10px);
+}
+.four:hover{
+    box-shadow: 0 0 10px rgb(102, 98, 98);
+    transform: translate(10px,10px);
+}
+.ones{
+    border-radius: 50%;
+    left:0;
+    top:0;
+    text-shadow: 5px 5px 5px rgb(56, 55, 55);
+    background: rgba(238, 10, 10, 0.986);
+    border: 3px solid white
+}
+.twos{
+    right:0;
+    top:0;
+    border-radius: 50%;
+    border: 3px solid white;
+    text-shadow: 5px 5px 5px rgb(56, 55, 55);
+    background: rgba(252, 235, 3, 0.863);
+}
+.threes{
+    left:0;
+    bottom:0;
+    border-radius: 50%;
+    border: 3px solid white;
+    background: rgba(149, 247, 3, 0.877);
+}
+.fours{
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    border: 3px solid white;
+    background: rgba(5, 190, 247, 0.856);
+}
